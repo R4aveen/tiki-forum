@@ -60,20 +60,20 @@ class UserAccount(models.Model):
     verified = models.BooleanField(default=False)
 
     def get_full_name(self):
-        return self.first_name + ' ' + self.last_name
+        return self.first_name + ' ' + self.last_name # para traer el nombre completo
 
     def get_short_name(self):
-        return self.first_name
+        return self.first_name # para traer el nombre de pila
 
     def __str__(self):
-        return self.account
+        return self.account # para traer el nombre de la cuenta
 
     def get_picture(self):
         if self.picture:
-            return self.picture.url
+            return self.picture.url # para traer la imagen
         return ''
 
     def get_banner(self):
         if self.banner:
-            return self.banner.url
+            return self.banner.url # para traer el banner
         return ''
