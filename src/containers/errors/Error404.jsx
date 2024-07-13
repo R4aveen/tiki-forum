@@ -1,5 +1,5 @@
+import FullWidthLayout from "hocs/layouts/FullWidthLayout";
 import { connect } from "react-redux";
-import FullWidthLayout from "../../hocs/layouts/FullWidthLayout";
 
 function Error404() {
     return (
