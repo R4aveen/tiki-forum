@@ -1,10 +1,16 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          
+        </Routes>
+      </Router>
+    </Provider>
   );
 }
 
